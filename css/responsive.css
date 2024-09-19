@@ -1,0 +1,710 @@
+@media only screen and (max-width: 600px) {
+    /* -------------- Home Start --------- */
+    .section-container {
+        padding: 0px 10px;
+    }
+
+    .home-section {
+        height: 525px;
+    }
+
+    .home-section::after {
+        background: linear-gradient(180deg, rgb(0 0 0 / 84%) -15%, rgb(0 0 0 / 39%) 100%);
+    }
+
+    .banner-text {
+        padding: 60px 0px;
+    }
+
+    .banner-text > h1 {
+        font-size: 28px;
+        line-height: 48px;
+        word-spacing: 0px;
+    }
+
+    .banner-text > p {
+        line-height: 28px;
+        padding: 0px;
+        word-spacing: 0px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    /* ------------ Home End ---------- */
+
+
+
+    /* --------------- Book Start ------------- */
+    .book-section > .section-container {
+        padding: 0px;
+    }
+
+    form#myForm {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .book-section .search {
+        padding: 0px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .book-section .search input {
+        font-size: 15px !important;
+        margin-top: 0px !important;
+    }
+    /* ------------ Book End ------- */
+
+
+
+    /* --------- About Start ----------- */
+    .about-section {
+        padding: 60px 0px 30px 0px;
+    }
+
+    .about-description {
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    .about-description > h2 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .about-text > h3 {
+        padding: 0px;
+    }
+
+    .about-content {
+        display: flex;
+        margin-top: 60px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about-description > img {
+        width: 50%;
+    }
+
+    .about-part-01 img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-part-02 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    img.left-01 {
+       display: none;
+    }
+
+    img.right-02 {
+        width: 100%;
+        height: auto;
+        right: 0px;
+        position: absolute;
+        top: -1171px;
+        z-index: -1;
+    }
+
+    .right-bottom-03 {
+        display: none;
+    }
+
+    .about-text {
+        padding: 30px 0px 0px 0px;
+    }
+
+    .section-description > h3 {
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .section-description > small {
+        letter-spacing: 14px;
+    }
+    /* ------------- About End ----------- */
+
+
+
+    /* ------------ Room Start ----------- */
+    .room-section {
+        padding: 30px 0px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .title-left-part {
+        width: 100%;
+    }
+    
+    img.room-shape-img {
+        width: 100%;
+        height: auto;
+        right: 0px;
+        position: absolute;
+        top: -1222px;
+        z-index: -1;
+    }
+
+    .room-text {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    img.room-shape-img {
+        width: 100%;
+        right: -72px;
+        top: -765px;
+        transform: rotate(109deg);
+    }
+
+    .room-content {
+        margin-top: 60px;
+    }
+
+    .owl-theme .owl-controls .owl-page span {
+        width: 16px !important;
+        height: 10px !important;
+        background: none !important;
+        border: 3px solid #7c0942 !important;
+    }
+
+    .post-slide {
+        margin: 20px 0px 20px;
+        padding-top: 0px;
+    }
+
+    .overlay-text {
+        top: 290px;
+    }
+    /* ------------------- Room End --------------- */
+
+
+
+    /* --------------- Restaurant Start ----------- */
+    .restaurant-section {
+        padding: 30px 0px;
+    }
+
+    .restaurant-content {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .card-01 {
+        margin-top: 0px;
+    }
+
+    .card-03 {
+        margin-top: 0px;
+    }
+
+    .card-04 {
+        margin-top: 0px;
+    }
+
+    
+    img.rest-shape-2 {
+        display: none;
+    }
+
+    .restaurant-content {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .restaurant-title {
+        padding: 0px;
+    }
+
+    .restaurant-title > p {
+        padding: 0px;
+    }
+    /* ---------------- Restaurant End ------------- */
+
+
+
+    /* ------------- Vacation Start --------------- */
+    .vacation-section {
+        margin: 60px 0px 30px 0px;
+    }
+
+    img.vac-shape-2 {
+       display: none;
+    }
+
+    .vacation-description > img {
+        width: 50%;
+    }
+
+    .vacation-description > h2 {
+        font-size: 28px;
+        line-height: 45px;
+        margin: 25px 0px;
+    }
+
+    .vacation-description {
+        padding: 40px 0px;
+    }
+
+    img.vac-shape-1 {
+        width: 100%;
+        height: auto;
+        left: -175px;
+        top: -170px;
+        z-index: -1;
+        opacity: 0.8;
+    }
+    /* ------------- Vacation End ------------ */
+
+
+
+    /* ------------- Spa Start ----------- */
+    .spa-card-01 {
+        display: flex;
+        margin-bottom: 60px;
+        flex-direction: column-reverse;
+    }
+
+    .spa-card-02 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spa-shape-1 {
+        display: none;
+    }
+
+    .spa-shape-2 {
+        position: absolute;
+        top: -967px;
+        z-index: -1;
+        left: 0px;
+        width: 100%;
+        opacity: 0.7;
+    }
+
+    .spa-img > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .spa-text {
+        padding: 0px;
+    }
+    /* ------------ Spa End -------------- */
+
+
+
+    /* ----------- Footer Start ------------ */
+    .footer-section {
+        margin-top: 30px;
+    }
+
+    .footer-section {
+        margin-top: 50px;
+        background: #530C36;
+        padding: 55px 0px;
+    }
+    .footer-section > .section-container {
+        padding: 0px;
+    }
+
+    .newsletter-title > h3 {
+        font-size: 28px;
+        margin: 15px 0px;
+    }
+
+    .newsletter > button {
+        padding: 15px 30px;
+    }
+
+    .message-content {
+        max-width: 330px;
+    }
+
+    .close {
+        margin-left: 260px;
+    }
+
+    img.footer-shape-1 {
+        position: absolute;
+        top: -265px;
+        left: -37px;
+        width: 40%;
+        bottom: 0;
+        transform: rotate(44deg);
+        z-index: 1;
+    }
+
+    button.footer-btn {
+        font-size: 12px;
+    }
+
+    h2.modal-title {
+        font-size: 32px;
+    }
+
+    h3.footer-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+    /* --------- Footer End ---------- */
+}
+
+
+
+
+@media only screen and (max-width: 868px) and (min-width: 601px) {
+    /* ----------- Home Start ------------- */
+    .banner-text {
+        padding: 120px 10px;
+    }
+
+    .banner-text > h1 {
+        font-size: 50px;
+        line-height: 80px;
+    }
+
+    .banner-text > p {
+        padding: 0px 15px;
+    }
+    /* ------------- Home End ------------ */
+
+    
+
+    /* ------------ Book Start ---------- */
+    form#myForm {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .book-section .search {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .book-section .search input {
+        margin-top: 0px !important;
+    }
+    /* ------------ Book End ------------- */
+
+
+
+    /* --------------- About Start -------------- */
+    .about-description {
+        text-align: center;
+        padding: 0px 15px;
+    }
+
+    .about-content {
+        display: flex;
+        gap: 30px;
+        margin-top: 60px;
+        justify-content: space-between;
+        flex-direction: column-reverse;
+    }
+
+    .about-part-01 img {
+        width: 100%;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    .about-part-02 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    img.left-01 {
+        left: -60px;
+        top: -2295px;
+        z-index: -1;
+    }
+
+    img.right-02 {
+        right: 0px;
+        top: -1200px;
+        z-index: -1;
+    }
+
+    .right-bottom-03 {
+        top: -750px;
+        right: 0px;
+    }
+
+    .about-text {
+        padding: 60px 0px 0px 0px;
+    }
+    /* --------------- About End -------------- */
+
+
+
+    /* --------------- Room Start -------------- */
+    .room-section {
+        padding: 50px 0px;
+        overflow: hidden;
+    }
+
+    .room-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .title-left-part {
+        width: 100%;
+    }
+
+    img.room-shape-img {
+        width: 650px;
+        height: 650px;
+        right: 22px;
+        position: absolute;
+        top: -660px;
+        z-index: -1;
+        transform: rotate(46deg);
+    }
+
+    .post-img img {
+        width: 100%;
+        height: 320px;
+    }
+
+    .overlay-text {
+        top: 175px;
+    }
+    /* --------------- Room End -------------- */
+
+
+
+    /* --------------- Restaurant Start -------------- */
+    .restaurant-section {
+        padding: 50px 0px;
+        overflow: hidden;
+    }
+
+    .restaurant-title {
+        padding: 0px 15px;
+        text-align: center;
+    }
+
+    .restaurant-content {
+        margin-top: 60px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    img.rest-shape-2 {
+        right: 35px;
+        top: -320px;
+        transform: rotate(257deg);
+    }
+
+    
+    .restaurant-title > p {
+        padding: 0px;
+    }
+    /* --------------- Restaurant End -------------- */
+
+
+
+    /* ----------- Vacation Start ----------- */
+    img.vac-shape-2 {
+        width: 300px;
+        right: -19px;
+        top: -325px;
+    }
+
+    .vacation-description {
+        padding: 40px 15px;
+    }
+    /* ------------- Vacation End ------------- */
+    
+
+
+    /* -------------- Spa Start ------------ */
+    .spa-card-01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spa-text {
+        padding: 0px 15px;
+    }
+
+    .spa-img > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .spa-card-02 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .spa-shape-2 {
+        top: -1186px;
+        left: 120px;
+        width: 63%;
+    }
+
+    .spa-shape-1 {
+        top: -1205px;
+        width: 70%;
+        left: 90px;
+        z-index: -11;
+        height: auto;
+    }
+    /* --------------- Spa End ------------- */
+
+
+
+    /* --------------- Footer Start -------------- */
+    .footer-section {
+        margin-top: 50px;
+        padding: 55px 35px;
+    }
+
+    img.footer-shape-1 {
+        top: -370px;
+        left: -88px;
+        bottom: 0;
+        width: 250px;
+        transform: rotate(37deg);
+    }
+
+    .modal-dialog {
+        max-width: 700px !important;
+    }
+    /* --------------- Footer End -------------- */
+} 
+
+
+
+
+@media only screen and (max-width: 1024px) and (min-width: 869px) {
+    /* -------------- Home Start ------------ */
+    .banner-text {
+        padding: 80px 40px;
+        text-align: center;
+    }
+    
+    .banner-text > h1 {
+        font-size: 50px;
+    }
+    /* ------------ Home End ---------- */
+
+
+
+    /* ----------- About Start ------------- */
+    .about-part-01 img {
+        width: 510px;
+        height: 900px;
+    }
+
+    .about-section {
+        overflow: hidden;
+    }
+
+    .about-description {
+        text-align: center;
+        padding: 0px 60px;
+    }
+
+    .about-text {
+        padding: 40px 15px 0px 0px;
+    }
+    /* ----------- About End ------------- */
+
+
+
+    /* ------------- Room Start ---------- */
+    .room-section {
+        overflow: hidden;
+    }
+
+    img.room-shape-img {
+        width: 700px;
+        height: 544px;
+        right: 35px;
+        top: -879px;
+        transform: rotate(20deg);
+    }
+    /* ----------- Room End  ----------- */
+
+
+
+    /* ---------- Restaurant Start --------- */
+    .restaurant-section {
+        overflow: hidden;
+    }
+
+    .restaurant-title {
+        padding: 0px 60px;
+        text-align: center;
+    }
+    /* ---------- Restaurant End --------- */
+
+
+
+    /* ----------- Spa Start ------------- */
+    .spa-img > img {
+        width: 500px;
+        height: 480px;
+    }
+
+    .spa-text {
+        padding: 0px 60px;
+    }
+
+    .spa-section {
+        padding: 50px 0px;
+        overflow: hidden;
+    }
+    /* ----------- Spa End --------------- */
+
+
+
+    /* ---------- Vacation Start --------- */
+    .vacation-section {
+        overflow: hidden;
+    }
+    
+    .vacation-description {
+        padding: 40px 10px;
+    }
+    /* ---------- Vacation End ----------- */
+
+    
+
+    /* ----------- Footer Start ---------- */
+    img.footer-shape-1 {
+        left: -190px;
+    }
+    
+    .footer-section {
+        margin-top: 50px;
+        padding: 55px 170px;
+    }
+    /* ---------- Footer End ---------- */
+}

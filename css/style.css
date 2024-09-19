@@ -1,0 +1,852 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  background-image: linear-gradient(to right,rgba(255, 182, 193, 0), rgba(255, 182, 193, 0)), url('../images/body-image.png');
+}
+
+
+/* ---------------------
+  Reused Style
+------------------------ */
+.section-container{
+  width: 95%;
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+button.section-button {
+  border-radius: 24.819px;
+  padding: 10px 28px;
+  outline: 0;
+  border: 0;
+  background: #7c0942;
+  color: white;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px;
+  word-spacing: 2px;
+  letter-spacing: 0.4px;
+}
+
+.section-description > small{
+  color:  #AC6231;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 18px;
+  text-transform: uppercase;
+}
+
+.section-description > h3 {
+  color: rgb(124, 9, 66);
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin: 15px 0px;
+}
+
+.section-description > p {
+  color: #8d8585;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  margin: 15px 0px 25px 0px;
+}
+
+
+
+/* ----------------
+  Home Start 
+-------------------- */
+.home-section{
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 660px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.home-section::after {
+  content: '';
+  background: linear-gradient(180deg, rgb(0 0 0 / 72%) -15%, rgb(0 0 0 / 25%) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: auto;
+}
+
+.banner-text{
+  padding: 150px 80px;
+  text-align: center;
+}
+
+.banner-text > h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 95px;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  color: #ffffff;
+}
+
+.banner-text > p {
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  padding: 0px 130px;
+  margin: 18px 0px;
+  word-spacing: 1px;
+}
+
+/* ------------------
+  Home End
+--------------------- */
+
+
+
+/*-------------------
+	Book Start
+--------------------- */
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+.book-section label {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+}
+
+.book-section {
+  background: #530C36;
+  padding: 30px;
+}
+
+.book-section .input {
+  background: #7c0942;
+  padding: 30px 30px 50px 30px;
+}
+
+.book-section .search {
+  background: #530c367a;
+  padding: 20px;
+  margin: -30px 30px -50px 30px;
+  width: 100%;
+}
+
+input {
+  width: 100% !important;
+  padding: 15px !important;
+  border: 1px solid rgba(255, 255, 255, 0.863);
+  outline: none;
+  background: #530c3682;
+  margin-top: 20px !important;
+  color: white;
+  font-family: 'Playfair Display', serif !important;
+  font-size: 15px !important;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+::placeholder {
+  color: white;
+}
+
+.book-section .search input {
+  background: none;
+  border: none;
+  font-size: 25px !important;
+  margin-top: 38px !important;
+  font-family: 'Playfair Display', serif !important;
+  font-weight: 500;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: linear-gradient(to right,rgb(255 212 219), rgb(255 244 246));
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 13px 43px 0 rgb(37 46 89/10%);
+  padding: 20px 20px;
+}
+
+.popup-content {
+  max-width: 300px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  padding: 20px;
+  word-spacing: 2px;
+  font-weight: 600;
+  color: #4b4c4c;
+}
+
+.popup-close {
+  color: #f10000;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 260px;
+}
+
+.popup-close:hover,
+.popup-close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*-------------------
+  Book End
+--------------------- */
+
+
+
+/*-------------------
+  About Start
+--------------------- */
+.about-section{
+  padding: 100px 0px 50px 0px;
+}
+
+.about-description{
+  text-align: center;
+  padding: 0px 150px;
+}
+
+.about-description > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  line-height: 75px;
+  color: #7c0942;
+  margin-bottom: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.about-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 100px;
+  justify-content: space-between;
+}
+
+.about-part-01 img {
+  width: 620px;
+  height: 950px;
+}
+
+.about-part-02 > img {
+  width: 100%;
+  height: auto;
+}
+
+.about-left-corner{
+  position: relative;
+}
+
+img.left-01 {
+  width: 560px;
+  height: 885px;
+  left: -60px;
+  position: absolute;
+  top: -1190px;
+  z-index: -1;
+}
+
+img.right-02 {
+  width: 720px;
+  height: 1280px;
+  right: -33px;
+  position: absolute;
+  top: -1283px;
+  z-index: -1;
+}
+
+.right-bottom-03 {
+  width: 320px;
+  height: 530px;
+  position: absolute;
+  top: -826px;
+  z-index: -1;
+  right: -30px;
+}
+
+.about-text{
+  padding: 40px 30px 0px 70px;
+}
+
+.about-text > h3 {
+  padding: 0px 30px 0px 0px;
+}
+/*-------------------
+  About End
+--------------------- */
+
+
+
+/* ----------------------
+  Room Start
+------------------------ */
+.room-section{
+  padding: 50px 0px;
+}
+
+.room-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.title-left-part {
+  width: 650px;
+}
+
+.room-content{
+  margin-top: 80px;
+}
+
+
+.room-left-shape{
+  position: relative;
+}
+
+img.room-shape-img {
+  width: 785px;
+  height: 1280px;
+  right: -33px;
+  position: absolute;
+  top: -1222px;
+  z-index: -1;
+}
+
+.post-slide {
+  margin: 20px 15px 20px;
+  padding-top: 1px;
+  cursor: pointer;
+}
+
+.post-slide .post-img {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+}
+
+.post-img img {
+  width: 100%;
+  height: 430px;
+  transform: scale(1,1);
+  transition: transform 0.2s linear;
+}
+
+.post-slide:hover .post-img img{
+  transform: scale(1.1,1.1);
+}
+
+.over-layer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(359deg, #14131354 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.overlay-text {
+  position: relative;
+  top: 310px;
+  display: block;
+  bottom: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 0px 35px;
+}
+
+.overlay-text > small{
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+.overlay-text > h4{
+  font-size: 15px;
+  font-weight: 600;
+  margin: 6px 0px;
+  text-transform: uppercase;
+}
+
+.overlay-text > p {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.owl-pagination {
+text-align: center;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  width: 100px !important;
+  height: 2px !important;
+  background: none !important;
+  border: 1px solid #7c0942 !important;
+}
+
+@media only screen and (max-width:1280px) {
+  .post-slide .post-content{
+      padding: 0px 15px 25px 15px;
+  }
+}
+
+/* ----------------------
+  Room End
+------------------------- */
+
+
+
+/* ----------------------
+  Restaurant Start
+------------------------- */
+.restaurant-section{
+  padding: 50px 0px;
+}
+
+.restaurant-title{
+  padding: 0px 160px;
+  text-align: center;
+}
+
+.restaurant-content{
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.restaurant-title > p{
+  padding: 0px 120px;
+}
+
+.card-01{
+  margin-top: 65px;
+}
+
+.card-03{
+  margin-top: 75px;
+}
+
+.card-04{
+  margin-top: 5px;
+  z-index: 1;
+}
+
+.card-img > img {
+  width: 100%;
+  padding: 0px 5px;
+  transform: scale(1, 1);
+  transition: transform 0.4s linear 0s;
+}
+
+.card-img:hover img{
+  transform: scale(-0.8,0.9);
+}
+
+.restaurant-shape-area{
+  position: relative;
+}
+
+img.rest-shape-2 {
+  width: 300px;
+  height: 510px;
+  right: -33px;
+  position: absolute;
+  top: -382px;
+  z-index: -1;
+}
+/* ----------------------
+  Restaurant End
+------------------------- */
+
+
+
+/* ----------------------
+  Vacation Start
+------------------------- */
+.vacation-section{
+  margin: 80px 0px 50px 0px;
+  background: #530C36;
+}
+
+.vacation-description{
+  padding: 40px 130px;
+  text-align: center;
+}
+
+.vacation-description > h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  line-height: 70px;
+  color: #ffffff;
+  margin: 25px 0px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.vacation-description > button.section-button {
+  background: #AC6231;
+}
+
+.vac-shape-area{
+  position: relative;
+}
+
+img.vac-shape-1 {
+  width: 520px;
+  height: auto;
+  left: -230px;
+  position: absolute;
+  top: -210px;
+}
+
+img.vac-shape-2 {
+  width: 319px;
+  height: 564px;
+  right: -33px;
+  position: absolute;
+  top: -360px;
+}
+/* ----------------------
+  Vacation End
+------------------------- */
+
+
+
+/* ----------------------
+  Spa Start
+------------------------- */
+.spa-section{
+  padding: 50px 0px;
+}
+
+.spa-card-01{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.spa-card-02{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.spa-text{
+  padding: 0px 140px;
+}
+
+.spa-img > img{
+  width: 580px;
+  height: 380px;
+}
+
+.spa-shape{
+  position: relative;
+}
+
+.spa-shape-1 {
+  position: absolute;
+  top: -920px;
+  width: 1050px;
+  z-index: -1;
+  left: 81px;
+}
+
+.spa-shape-2 {
+  position: absolute;
+  top: -930px;
+  z-index: -1;
+  left: 150px;
+  width: 680px;
+}
+/* ----------------------
+  Spa End
+------------------------- */
+
+
+
+/* ------------------------
+  Footer Start
+-------------------------- */
+.footer-section {
+  margin-top: 50px;
+  background: #530C36;
+  padding: 55px 360px;
+}
+
+.newsletter{
+  display: flex;
+  align-items: center;
+}
+
+.newsletter > input {
+  width: 100%;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.newsletter > button {
+  background: transparent;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.863);
+  padding: 15px 55px;
+  margin-top: 20px;
+  color:  #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; 
+  text-transform: uppercase;
+}
+
+.newsletter-title > h3{
+  color: #ffffff;
+  font-family: 'Cormorant', serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  margin: 15px 0px;
+  text-align: center;
+}
+
+.footer-shape{
+  position: relative;
+}
+
+img.footer-shape-1 {
+  position: absolute;
+  top: -160px;
+  left: -380px;
+  bottom: 0;
+  width: 275px;
+}
+
+.footer-btn-group {
+  text-align: center;
+}
+
+button.footer-btn {
+  outline: none;
+  background: none;
+  border: none;
+  text-decoration: none;
+  color: rgb(255 255 255);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0px 15px;
+  font-family: 'Montserrat', sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+
+button.footer-btn > a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/* -- Footer Modal PopUp Start -- */
+h2.modal-title {
+  font-weight: 500;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  margin: 0px;
+}
+
+h3.footer-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.modal-content {
+  background-image: linear-gradient(to right, rgb(250, 217, 223), rgb(255, 244, 246));
+}
+
+button.btn.btn-danger {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  background: #7c0942;
+  border: none;
+  border-radius: 0;
+  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+button.btn.btn-danger:hover{
+  background: rgb(191 8 91) !important;
+  color: white !important;
+}
+
+p.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #181717;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+ul.list-icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.list-icon li {
+  display: flex;
+  align-items: center;
+  margin: 15px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color: #181717;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+
+ul.list-icon li .icon {
+  width: 25px;
+  height: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  position: relative;
+  margin-right: -8px;
+  min-width: 30px;
+  font-size: 20px;
+  margin-top: -2px;
+}
+
+span.icon.background-transparent i {
+  font-size: 15px;
+}
+
+.btn-close {
+  padding: 20px 30px !important;
+  outline: none !important;
+}
+
+.btn-close:focus {
+  box-shadow: none !important;
+}
+
+
+.modal-lg, .modal-xl {
+    --bs-modal-width: 900px !important;
+    border-radius: none !important;
+}
+/* -- Footer Modal PopUp End -- */
+/* --------------------------
+  Footer End 
+------------------------------- */
+
+
+
+/* ------------------
+  Subscribe Start 
+--------------------- */
+.message {
+  display: none;
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%, -44%);
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 13px 43px 0 rgb(37 46 89/10%);
+  z-index: 999;
+}
+
+.message-content {
+  background-image: linear-gradient(to right, rgb(255, 212, 219), rgb(255, 244, 246));
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  word-spacing: 2px;
+  font-weight: 600;
+  color: #4b4c4c;
+  max-width: 400px;
+  padding: 30px;
+}
+
+.close {
+  color: #f10000;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 335px;
+}
+/* -------------------
+  Subscribe End
+------------------------ */
