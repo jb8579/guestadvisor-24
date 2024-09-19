@@ -848,6 +848,16 @@ span.icon.background-transparent i {
   cursor: pointer;
   margin-left: 335px;
 }
+
+.company-name{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fcfcfce7;
+  text-align: center;
+  padding-top: 60px;
+  letter-spacing: 0.6px;
+}
 /* -------------------
   Subscribe End
 ------------------------ */
