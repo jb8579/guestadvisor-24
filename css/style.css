@@ -36,6 +36,7 @@ button.section-button {
   font-size: 17px;
   word-spacing: 2px;
   letter-spacing: 0.4px;
+  display: none;
 }
 
 .section-description > small{
@@ -82,7 +83,7 @@ button.section-button {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 660px;
+  height: 600px;
   position: relative;
   z-index: 1;
   overflow: hidden;

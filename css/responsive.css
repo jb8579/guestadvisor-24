@@ -5,7 +5,7 @@
     }
 
     .home-section {
-        height: 525px;
+        height: auto;
     }
 
     .home-section::after {
